@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Stop Meat Shop</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+
+
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "6iqCoi9OLI6mO4co_",
+        });
+    })();
+    </script>
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Assets/Icons/logoImage.png" alt="">
+            <div class="navBars">
+                <i class="fa-solid fa-bars navIcons hamburger"></i>
+            </div>
+            <div class="right">
+                <a class="navLinks" href="">Menu</a>
+                <a class="navLinks" href="">Hours</a>
+                <a class="navLinks" href="">Gallery</a>
+                <a class="navLinks" href="">Contact Us</a>
+            </div>
+            <nav class="navMobile navHidden">
+                <div class="navMobileLinks">
+                    <a href="index.html"><img src="Assets/Icons/logoImage.png" class="navImage navMobileImage" alt="One Stop Meat Shop Logo"></a>
+                    <a class="navLinks" href="">Menu</a>
+                    <a class="navLinks" href="">Hours</a>
+                    <a class="navLinks" href="">Gallery</a>
+                    <a class="navLinks" href="">Contact Us</a>
+                    <i class="fa-solid fa-xmark navIcons"></i>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Landing Page-->
+        <section class="landingPage">
+            <div class="more">
+                <h1>WELCOME TO</h1>
+                <h2>DHIDO NEPALI RESTAURANT</h2>
+                <h3>& One Stop Meat Shop</h3>
+                <div class="buttons">
+                    <a href=""><button class="redButton">View Menu</button></a>
+                    <a href=""><button class="redButton">Contact Us</button></a>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!--Recommended Items-->
+        <section class="foodList">
+            <h4>Recommended Items</h4>
+            <div class="foodCardContainer">
+                <div class="foodCard">
+                    <img src="Assets/menuItems/pressureCookerMomo.png" alt="">
+                    <div class="foodInfo">
+                        <h6>Pressure Cooker Momo</h6>
+                        <p>Pressure cooker momo description here along with more descritpions of this product and other products</p>
+                    </div>
+                    <button class="redButton smallerButton">Read More</button>
+                </div>
+                <div class="foodCard">
+                    <img src="Assets/menuItems/pressureCookerMomo.png" alt="">
+                    <div class="foodInfo">
+                        <h6>Pressure Cooker Momo</h6>
+                        <p>Pressure cooker momo description here along with more descritpions of this product and other products</p>
+                    </div>
+                    <button class="redButton smallerButton">Read More</button>
+                </div>
+                <div class="foodCard">
+                    <img src="Assets/menuItems/pressureCookerMomo.png" alt="">
+                    <div class="foodInfo">
+                        <h6>Pressure Cooker Momo</h6>
+                        <p>Pressure cooker momo description here along with more descritpions of this product and other products</p>
+                    </div>
+                    <button class="redButton smallerButton">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Full Menu-->
+        <section class="fullMenu">
+            <h4>Full Menu</h4>
+            <section class="menuContainer">
+                
+                <!-- Starter Menu Block -->
+                <div class="menu-block">
+
+                    <!-- Starter Menu Title -->
+                    <div class="menu-block-title">
+                        <button class="redButton">Starter</button>
+                        <p class="spicyMenu regularPrice">Regular</p>
+                        <p class="spicyMenu higherPrice">Spicy</p>
+                    </div>
+                
+                    <!-- Menu Items -->
+                    <div class="menu-item" data-type="starter" data-name="PORK BELLY SADEKO" data-regular-price="$8.99" data-spicy-price="$9.99">
+                        <p>PORK BELLY SADEKO</p>
+                        <p class="regularPrice">$8.99</p>
+                        <p class="higherPrice">$9.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="CHATPATE" data-regular-price="$6.99" data-spicy-price="$7.99">
+                        <p>CHATPATE</p>
+                        <p class="regularPrice">$6.99</p>
+                        <p class="higherPrice">$7.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="WAIWAI SADHEKO" data-regular-price="$5.99" data-spicy-price="$7.99">
+                        <p>WAIWAI SADHEKO</p>
+                        <p class="regularPrice">$5.99</p>
+                        <p class="higherPrice">$7.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="ALOO CHOP" data-regular-price="$5.99" data-spicy-price="$7.99">
+                        <p>ALOO CHOP</p>
+                        <p class="regularPrice">$5.99</p>
+                        <p class="higherPrice">$7.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="PIRO ALOO" data-regular-price="$7.99" data-spicy-price="$8.99">
+                        <p>PIRO ALOO</p>
+                        <p class="regularPrice">$7.99</p>
+                        <p class="higherPrice">$8.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="MALEKHU MACHA" data-regular-price="$8.99" data-spicy-price="$9.99">
+                        <p>MALEKHU MACHA</p>
+                        <p class="regularPrice">$8.99</p>
+                        <p class="higherPrice">$9.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="CHICKEN 65" data-regular-price="$8.99" data-spicy-price="$9.99">
+                        <p>CHICKEN 65</p>
+                        <p class="regularPrice">$8.99</p>
+                        <p class="higherPrice">$9.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="CHICKEN CHILLI" data-regular-price="$8.99" data-spicy-price="$9.99">
+                        <p>CHICKEN CHILLI</p>
+                        <p class="regularPrice">$8.99</p>
+                        <p class="higherPrice">$9.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="OMELETTE" data-regular-price="$4.99" data-spicy-price="$5.99">
+                        <p>OMELETTE</p>
+                        <p class="regularPrice">$4.99</p>
+                        <p class="higherPrice">$5.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="BUFF CHATPATE" data-regular-price="$12.99" data-spicy-price="$13.99">
+                        <p>BUFF CHATPATE</p>
+                        <p class="regularPrice">$12.99</p>
+                        <p class="higherPrice">$13.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="BUFF ACHAR CHATPATE" data-regular-price="$15.99" data-spicy-price="$16.99">
+                        <p>BUFF ACHAR CHATPATE</p>
+                        <p class="regularPrice">$15.99</p>
+                        <p class="higherPrice">$16.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="SAUSAGE STICK" data-regular-price="$4.99" data-spicy-price="$5.99">
+                        <p>SAUSAGE STICK</p>
+                        <p class="regularPrice">$4.99</p>
+                        <p class="higherPrice">$5.99</p>
+                    </div>
+                    <div class="menu-item" data-type="starter" data-name="ALOO STICK" data-regular-price="$4.99" data-spicy-price="$5.99">
+                        <p>ALOO STICK</p>
+                        <p class="regularPrice">$4.99</p>
+                        <p class="higherPrice">$5.99</p>
+                    </div>
+                </div>
+
+                <!-- Momo Menu Block -->
+                <div class="menu-block">
+
+                    <!-- Momo Menu Title -->
+                    <div class="menu-block-title">
+                        <button class="redButton">Momo</button>
+                        <p class="spicyMenu regularPrice">Regular</p>
+                        <p class="spicyMenu higherPrice">Spicy</p>
+                    </div>
+                
+                    <!-- Menu Items -->
+                    <div class="menu-item" data-type="momo" data-name="CHICKEN STEAM/KOTHEY" data-regular-price="$8.99" data-spicy-price="$9.99">
+                        <p>CHICKEN STEAM/KOTHEY</p>
+                        <p class="regularPrice">$8.99</p>
+                        <p class="higherPrice">$9.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="VEG STEAM/KOTHEY" data-regular-price="$8.99" data-spicy-price="$9.99">
+                        <p>VEG STEAM/KOTHEY</p>
+                        <p class="regularPrice">$8.99</p>
+                        <p class="higherPrice">$9.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="PORK STEAM/KOTHEY" data-regular-price="$8.99" data-spicy-price="$9.99">
+                        <p>PORK STEAM/KOTHEY</p>
+                        <p class="regularPrice">$8.99</p>
+                        <p class="higherPrice">$9.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="MUTTON STEAM/KOTHEY" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>MUTTON STEAM/KOTHEY</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="VEG FRIED CHILLI" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>VEG FRIED CHILLI</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="CHICKEN FRIED CHILLI" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>CHICKEN FRIED CHILLI</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="PORK FRIED CHILLI" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>PORK FRIED CHILLI</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="MUTTON FRIED CHILLI" data-regular-price="$10.99" data-spicy-price="$11.99">
+                        <p>MUTTON FRIED CHILLI</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$11.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="VEG JHOL" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>VEG JHOL</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="CHICKEN JHOL" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>CHICKEN JHOL</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="PORK JHOL" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>PORK JHOL</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="MUTTON JHOL" data-regular-price="$10.99" data-spicy-price="$11.99">
+                        <p>MUTTON JHOL</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$11.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="VEG TIKKA FRIED MASALA" data-regular-price="$10.99" data-spicy-price="$12.99">
+                        <p>VEG TIKKA FRIED MASALA</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$12.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="CHICKEN TIKKA FRIED" data-regular-price="$10.99" data-spicy-price="$12.99">
+                        <p>CHICKEN TIKKA FRIED</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$12.99</p>
+                    </div>
+                    <div class="menu-item" data-type="momo" data-name="PRESSURE COOKER MOMO" data-regular-price="$10.99" data-spicy-price="$11.99">
+                        <p>PRESSURE COOKER MOMO</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$11.99</p>
+                    </div>
+                </div>
+
+                <!-- Chowmien Menu Block -->
+                <div class="menu-block">
+
+                    <!-- Chowmein Menu Title -->
+                    <div class="menu-block-title">
+                        <button class="redButton">Chowmein</button>
+                        <p class="spicyMenu regularPrice">Regular</p>
+                        <p class="spicyMenu higherPrice">Spicy</p>
+                    </div>
+                
+                    <!-- Menu Items -->
+                    <div class="menu-item" data-type="chowmein" data-name="VEG CHOWMEIN" data-regular-price="$8.99" data-spicy-price="$9.99">
+                        <p>VEG CHOWMEIN</p>
+                        <p class="regularPrice">$8.99</p>
+                        <p class="higherPrice">$9.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="CHICKEN CHOWMEIN" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>CHICKEN CHOWMEIN</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="PORK CHOWMEIN" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>PORK CHOWMEIN</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="MUTTON CHOWMEIN" data-regular-price="$10.99" data-spicy-price="$11.99">
+                        <p>MUTTON CHOWMEIN</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$11.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="MIXED CHOWMEIN" data-regular-price="$10.99" data-spicy-price="$11.99">
+                        <p>MIXED CHOWMEIN</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$11.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="BUFF CHOWMEIN" data-regular-price="$14.99" data-spicy-price="$15.99">
+                        <p>BUFF CHOWMEIN</p>
+                        <p class="regularPrice">$14.99</p>
+                        <p class="higherPrice">$15.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="CHICKEN BHUTUWA CHOWMEIN" data-regular-price="$13.99" data-spicy-price="$14.99">
+                        <p>CHICKEN BHUTUWA CHOWMEIN</p>
+                        <p class="regularPrice">$13.99</p>
+                        <p class="higherPrice">$14.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="MUTTON SUKUTI CHOWMEIN" data-regular-price="$14.99" data-spicy-price="$15.99">
+                        <p>MUTTON SUKUTI CHOWMEIN</p>
+                        <p class="regularPrice">$14.99</p>
+                        <p class="higherPrice">$15.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="PORK SUKUTI CHOWMEIN" data-regular-price="$13.99" data-spicy-price="$14.99">
+                        <p>PORK SUKUTI CHOWMEIN</p>
+                        <p class="regularPrice">$13.99</p>
+                        <p class="higherPrice">$14.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="BUFF PACKET CHOWMEIN" data-regular-price="$16.99" data-spicy-price="$17.99">
+                        <p>BUFF PACKET CHOWMEIN</p>
+                        <p class="regularPrice">$16.99</p>
+                        <p class="higherPrice">$17.99</p>
+                    </div>
+                    <div class="menu-item" data-type="chowmein" data-name="BUFF SUKUTI CHOWMEIN" data-regular-price="$15.99" data-spicy-price="$16.99">
+                        <p>BUFF SUKUTI CHOWMEIN</p>
+                        <p class="regularPrice">$15.99</p>
+                        <p class="higherPrice">$16.99</p>
+                    </div>
+                </div>
+
+                <!-- Thali Menu Block -->
+                <div class="menu-block">
+
+                    <!-- Thali Menu Title -->
+                    <div class="menu-block-title">
+                        <button class="redButton">Thali</button>
+                        <p class="spicyMenu regularPrice">Regular</p>
+                        <p class="spicyMenu extraSoupPrice">Extra Soup</p>
+                    </div>
+                
+                    <!-- Menu Items -->
+                    <div class="menu-item" data-type="thali" data-name="MUTTON THALI" data-regular-price="$13.99" data-extra-soup-price="$1.49">
+                        <p>MUTTON THALI</p>
+                        <p class="regularPrice">$13.99</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="CHICKEN THALI" data-regular-price="$13.49" data-extra-soup-price="$1.49">
+                        <p>CHICKEN THALI</p>
+                        <p class="regularPrice">$13.49</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="VEG THALI" data-regular-price="$11.99" data-extra-soup-price="$1.49">
+                        <p>VEG THALI</p>
+                        <p class="regularPrice">$11.99</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="PORK THALI" data-regular-price="$13.49" data-extra-soup-price="$1.49">
+                        <p>PORK THALI</p>
+                        <p class="regularPrice">$13.49</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="FISH THALI" data-regular-price="$13.49" data-extra-soup-price="$1.49">
+                        <p>FISH THALI</p>
+                        <p class="regularPrice">$13.49</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="CHICKEN BHUTUWA THALI" data-regular-price="$14.49" data-extra-soup-price="$1.49">
+                        <p>CHICKEN BHUTUWA THALI</p>
+                        <p class="regularPrice">$14.49</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="MUTTON BHUTUWA THALI" data-regular-price="$14.99" data-extra-soup-price="$1.49">
+                        <p>MUTTON BHUTUWA THALI</p>
+                        <p class="regularPrice">$14.99</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="PORK BHUTUWA THALI" data-regular-price="$14.49" data-extra-soup-price="$1.49">
+                        <p>PORK BHUTUWA THALI</p>
+                        <p class="regularPrice">$14.49</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="BUFF SUKUTI THALI" data-regular-price="$15.99" data-extra-soup-price="$1.49">
+                        <p>BUFF SUKUTI THALI</p>
+                        <p class="regularPrice">$15.99</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="LOCAL CHICKEN BHUTUWA" data-regular-price="$14.49" data-extra-soup-price="$1.49">
+                        <p>LOCAL CHICKEN BHUTUWA</p>
+                        <p class="regularPrice">$14.49</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="MUTTON SUKUTI THALI" data-regular-price="$14.99" data-extra-soup-price="$1.49">
+                        <p>MUTTON SUKUTI THALI</p>
+                        <p class="regularPrice">$14.99</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                    <div class="menu-item" data-type="thali" data-name="LOCAL CHICKEN THALI" data-regular-price="$13.99" data-extra-soup-price="$1.49">
+                        <p>LOCAL CHICKEN THALI</p>
+                        <p class="regularPrice">$13.99</p>
+                        <p class="extraSoupPrice">$1.49</p>
+                    </div>
+                </div>
+                
+                <!-- Fried Rice Menu Block -->
+                <div class="menu-block">
+
+                    <!-- Fried Rice Menu Title -->
+                    <div class="menu-block-title">
+                        <button class="redButton">Fried Rice</button>
+                        <p class="spicyMenu regularPrice">Regular</p>
+                        <p class="spicyMenu higherPrice">Spicy</p>
+                    </div>
+                
+                    <!-- Menu Items -->
+                    <div class="menu-item" data-type="fried-rice" data-name="VEG FRIED RICE" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>VEG FRIED RICE</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="CHICKEN FRIED RICE" data-regular-price="$10.99" data-spicy-price="$11.99">
+                        <p>CHICKEN FRIED RICE</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$11.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="EGG FRIED RICE" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>EGG FRIED RICE</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="MUTTON FRIED RICE" data-regular-price="$10.99" data-spicy-price="$11.99">
+                        <p>MUTTON FRIED RICE</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$11.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="PORK FRIED RICE" data-regular-price="$9.99" data-spicy-price="$10.99">
+                        <p>PORK FRIED RICE</p>
+                        <p class="regularPrice">$9.99</p>
+                        <p class="higherPrice">$10.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="MIXED FRIED RICE" data-regular-price="$11.99" data-spicy-price="$12.99">
+                        <p>MIXED FRIED RICE</p>
+                        <p class="regularPrice">$11.99</p>
+                        <p class="higherPrice">$12.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="BUFF FRIED RICE" data-regular-price="$14.99" data-spicy-price="$15.99">
+                        <p>BUFF FRIED RICE</p>
+                        <p class="regularPrice">$14.99</p>
+                        <p class="higherPrice">$15.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="PANEER FRIED RICE" data-regular-price="$10.99" data-spicy-price="$11.99">
+                        <p>PANEER FRIED RICE</p>
+                        <p class="regularPrice">$10.99</p>
+                        <p class="higherPrice">$11.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="BUFF SUKUTI FRIED RICE" data-regular-price="$16.99" data-spicy-price="$17.99">
+                        <p>BUFF SUKUTI FRIED RICE</p>
+                        <p class="regularPrice">$16.99</p>
+                        <p class="higherPrice">$17.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="MUTTON SUKUTI FRIED RICE" data-regular-price="$12.99" data-spicy-price="$13.99">
+                        <p>MUTTON SUKUTI FRIED RICE</p>
+                        <p class="regularPrice">$12.99</p>
+                        <p class="higherPrice">$13.99</p>
+                    </div>
+                    <div class="menu-item" data-type="fried-rice" data-name="PORK SUKUTI FRIED RICE" data-regular-price="$11.99" data-spicy-price="$12.99">
+                        <p>PORK SUKUTI FRIED RICE</p>
+                        <p class="regularPrice">$11.99</p>
+                        <p class="higherPrice">$12.99</p>
+                    </div>
+                </div>
+                
+
+                <!-- Biryani and Sekuwa Menu Block -->
+                <div class="twoBlocks">
+                    <div class="menu-block">
+
+                        <!-- Biryani Menu Title -->
+                        <div class="menu-block-title">
+                            <button class="redButton">Biryani</button>
+                            <p class="spicyMenu regularPrice">Regular</p>
+                            <p class="spicyMenu higherPrice">Spicy</p>
+                        </div>
+                    
+                        <!-- Biryani Menu Items -->
+                        <div class="menu-item" data-type="biryani" data-name="CHICKEN BIRYANI" data-regular-price="$9.99" data-spicy-price="$10.99">
+                            <p>CHICKEN BIRYANI</p>
+                            <p class="regularPrice">$9.99</p>
+                            <p class="higherPrice">$10.99</p>
+                        </div>
+                        <div class="menu-item" data-type="biryani" data-name="VEG BIRYANI" data-regular-price="$8.99" data-spicy-price="$9.99">
+                            <p>VEG BIRYANI</p>
+                            <p class="regularPrice">$8.99</p>
+                            <p class="higherPrice">$9.99</p>
+                        </div>
+                        <div class="menu-item" data-type="biryani" data-name="MUTTON BIRYANI" data-regular-price="$10.99" data-spicy-price="$11.99">
+                            <p>MUTTON BIRYANI</p>
+                            <p class="regularPrice">$10.99</p>
+                            <p class="higherPrice">$11.99</p>
+                        </div>
+                        <div class="menu-item" data-type="biryani" data-name="PANEER BIRYANI" data-regular-price="$9.99" data-spicy-price="$10.99">
+                            <p>PANEER BIRYANI</p>
+                            <p class="regularPrice">$9.99</p>
+                            <p class="higherPrice">$10.99</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                    
+                        <!-- Sekuwa Menu Title -->
+                        <div class="menu-block-title">
+                            <button class="redButton">Sekuwa</button>
+                            <p class="spicyMenu regularPrice">Regular</p>
+                            <p class="spicyMenu higherPrice">Spicy</p>
+                        </div>
+                    
+                        <!-- Sekuwa Menu Items -->
+                        <div class="menu-item" data-type="sekuwa" data-name="CHICKEN SEKUWA" data-regular-price="$11.99" data-spicy-price="$12.99">
+                            <p>CHICKEN SEKUWA</p>
+                            <p class="regularPrice">$11.99</p>
+                            <p class="higherPrice">$12.99</p>
+                        </div>
+                        <div class="menu-item" data-type="sekuwa" data-name="MUTTON SEKUWA" data-regular-price="$13.99" data-spicy-price="$14.99">
+                            <p>MUTTON SEKUWA</p>
+                            <p class="regularPrice">$13.99</p>
+                            <p class="higherPrice">$14.99</p>
+                        </div>
+                        <div class="menu-item" data-type="sekuwa" data-name="PORK SEKUWA" data-regular-price="$11.99" data-spicy-price="$12.99">
+                            <p>PORK SEKUWA</p>
+                            <p class="regularPrice">$11.99</p>
+                            <p class="higherPrice">$12.99</p>
+                        </div>
+                        <div class="menu-item" data-type="sekuwa" data-name="MUTTON TAAS" data-regular-price="$13.49" data-spicy-price="$13.99">
+                            <p>MUTTON TAAS</p>
+                            <p class="regularPrice">$13.49</p>
+                            <p class="higherPrice">$13.99</p>
+                        </div>
+                        <div class="menu-item" data-type="sekuwa" data-name="BHUTTAN" data-regular-price="$11.99" data-spicy-price="$12.99">
+                            <p>BHUTTAN</p>
+                            <p class="regularPrice">$11.99</p>
+                            <p class="higherPrice">$12.99</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Breakfast Menu Block -->
+                <div class="menu-block">
+
+                    <!-- Breakfast Menu Title -->
+                    <div class="menu-block-title">
+                        <button class="redButton">Breakfast</button>
+                        <p class="spicyMenu regularPrice">Regular</p>
+                    </div>
+                
+                    <!-- Breakfast Menu Items -->
+                    <div class="menu-item" data-type="breakfast" data-name="ALOO PARATHA" data-regular-price="$6.99">
+                        <p>ALOO PARATHA</p>
+                        <p class="regularPrice">$6.99</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="SAMOSA (2 PCS)" data-regular-price="$6.99">
+                        <p>SAMOSA (2 PCS)</p>
+                        <p class="regularPrice">$6.99</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="SELROTI (2 PCS)" data-regular-price="$6.99">
+                        <p>SELROTI (2 PCS)</p>
+                        <p class="regularPrice">$6.99</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="CHANA TARKARI" data-regular-price="$2.49">
+                        <p>CHANA TARKARI</p>
+                        <p class="regularPrice">$2.49</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="ALOO MATAR TARKARI" data-regular-price="$2.49">
+                        <p>ALOO MATAR TARKARI</p>
+                        <p class="regularPrice">$2.49</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="RAAJMA TARKARI" data-regular-price="$2.49">
+                        <p>RAAJMA TARKARI</p>
+                        <p class="regularPrice">$2.49</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="ALOO TAMA TARKARI" data-regular-price="$2.49">
+                        <p>ALOO TAMA TARKARI</p>
+                        <p class="regularPrice">$2.49</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="DAAL" data-regular-price="$1.99">
+                        <p>DAAL</p>
+                        <p class="regularPrice">$1.99</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="OMELETTE" data-regular-price="$4.99">
+                        <p>OMELETTE</p>
+                        <p class="regularPrice">$4.99</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="CHANA FRY" data-regular-price="$7.99">
+                        <p>CHANA FRY</p>
+                        <p class="regularPrice">$7.99</p>
+                    </div>
+                    <div class="menu-item" data-type="breakfast" data-name="BOILED EGG" data-regular-price="$1.49">
+                        <p>BOILED EGG</p>
+                        <p class="regularPrice">$1.49</p>
+                    </div>
+                </div>
+                
+
+
+                <!-- Sukuti and Curry Menu Block -->
+                <div class="twoBlocks">
+                    <div class="menu-block">
+
+                        <!-- Sukuti Menu Block -->
+                        <div class="menu-block-title">
+                            <button class="redButton">Sukuti</button>
+                            <p class="spicyMenu regularPrice">Regular</p>
+                            <p class="spicyMenu higherPrice">2x Spicy</p>
+                        </div>
+                    
+                        <!-- Sukuti Menu Items -->
+                        <div class="menu-item" data-type="sukuti" data-name="MUTTON SUKUTI" data-regular-price="$13.99" data-spicy-price="$14.99">
+                            <p>MUTTON SUKUTI</p>
+                            <p class="regularPrice">$13.99</p>
+                            <p class="higherPrice">$14.99</p>
+                        </div>
+                        <div class="menu-item" data-type="sukuti" data-name="BUFF SUKUTI" data-regular-price="$14.99" data-spicy-price="$15.99">
+                            <p>BUFF SUKUTI</p>
+                            <p class="regularPrice">$14.99</p>
+                            <p class="higherPrice">$15.99</p>
+                        </div>
+                        <div class="menu-item" data-type="sukuti" data-name="BUFF SUKUTI SADHEKO" data-regular-price="$14.99" data-spicy-price="$15.99">
+                            <p>BUFF SUKUTI SADHEKO</p>
+                            <p class="regularPrice">$14.99</p>
+                            <p class="higherPrice">$15.99</p>
+                        </div>
+                        <div class="menu-item" data-type="sukuti" data-name="MUTTON SUKUTI SADHEKO" data-regular-price="$13.99" data-spicy-price="$14.99">
+                            <p>MUTTON SUKUTI SADHEKO</p>
+                            <p class="regularPrice">$13.99</p>
+                            <p class="higherPrice">$14.99</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-block">
+                    
+                        <!-- Curry Menu Block -->
+                        <div class="menu-block-title">
+                            <button class="redButton">Curry</button>
+                            <p class="spicyMenu regularPrice">Regular</p>
+                        </div>
+                    
+                        <!-- Curry Menu Items -->
+                        <div class="menu-item" data-type="curry" data-name="CHICKEN TIKKA MASALA" data-regular-price="$11.99">
+                            <p>CHICKEN TIKKA MASALA</p>
+                            <p class="regularPrice">$11.99</p>
+                        </div>
+                        <div class="menu-item" data-type="curry" data-name="BUTTER CHICKEN MASALA" data-regular-price="$11.99">
+                            <p>BUTTER CHICKEN MASALA</p>
+                            <p class="regularPrice">$11.99</p>
+                        </div>
+                        <div class="menu-item" data-type="curry" data-name="PANEER TIKKA MASALA" data-regular-price="$10.99">
+                            <p>PANEER TIKKA MASALA</p>
+                            <p class="regularPrice">$10.99</p>
+                        </div>
+                        <div class="menu-item" data-type="curry" data-name="FISH CURRY" data-regular-price="$9.99">
+                            <p>FISH CURRY</p>
+                            <p class="regularPrice">$9.99</p>
+                        </div>
+                        <div class="menu-item" data-type="curry" data-name="PORK CURRY" data-regular-price="$9.99">
+                            <p>PORK CURRY</p>
+                            <p class="regularPrice">$9.99</p>
+                        </div>
+                        <div class="menu-item" data-type="curry" data-name="MUTTON CURRY" data-regular-price="$10.99">
+                            <p>MUTTON CURRY</p>
+                            <p class="regularPrice">$10.99</p>
+                        </div>
+                        <div class="menu-item" data-type="curry" data-name="CHICKEN CURRY" data-regular-price="$9.99">
+                            <p>CHICKEN CURRY</p>
+                            <p class="regularPrice">$9.99</p>
+                        </div>
+                        <div class="menu-item" data-type="curry" data-name="LOCAL CHICKEN CURRY" data-regular-price="$11.99">
+                            <p>LOCAL CHICKEN CURRY</p>
+                            <p class="regularPrice">$11.99</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </section>
+            <a href="">
+                <button class="redButton longerButton">
+                    Ready to Order?
+                </button> 
+            </a>
+        </section>
+
+        <!--Reviews-->
+        <section class="reviews">
+            <div class="reviewsTop">
+                <h4>Reviews</h4>
+                <div class="reviewButtons">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="reviewsContainer">
+
+                <div class="review">
+                    <div class="top">
+                        <div class="reviewProfilePic"></div>
+                        <div class="reviewProfileInfo">
+                            <h6>First Name</h6>
+                            <div class="fiveStars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti expedita iusto inventore laborum doloremque aperiam, quae enim obcaecati repellat officia molestiae, excepturi non. Expedita, sequi rem enim quas molestiae quae!</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="top">
+                        <div class="reviewProfilePic"></div>
+                        <div class="reviewProfileInfo">
+                            <h6>First Name</h6>
+                            <div class="fiveStars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti expedita iusto inventore laborum doloremque aperiam, quae enim obcaecati repellat officia molestiae, excepturi non. Expedita, sequi rem enim quas molestiae quae!</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="top">
+                        <div class="reviewProfilePic"></div>
+                        <div class="reviewProfileInfo">
+                            <h6>First Name</h6>
+                            <div class="fiveStars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti expedita iusto inventore laborum doloremque aperiam, quae enim obcaecati repellat officia molestiae, excepturi non. Expedita, sequi rem enim quas molestiae quae!</p>
+                    </div>
+                </div>
+            </div>
+            <a href="">
+                <button >
+                    Read More Reviews!
+                </button>
+            </a>
+        </section>
+
+        <!--About Us Page-->
+        <section class="aboutUs">
+            <h4>About Us</h4>
+            <div class="more">
+                <div class="aboutUsImg"></div>
+
+                <div class="aboutUsInfo">
+                    <p>Lorem ispum id magna aliquam, vehicula arcu eu, mollis libero. Ut libero magna, laoreet quis risus sit amet, blandit sagittis massa. Proin ac leo neque. In hac habitasse platea dictumst. Mauris malesuada accumsan dictum. Proin risus justo, semper sit amet enim vitae, auctor pellentesque arcu. Mauris vitae laoreet eros. Fusce sit amet odio luctus, ornare odio in, dictum nulla. Mauris venenatis scelerisque metus, sed eleifend neque rutrum quis. Ut nec magna sed ex ornare tincidunt sed vel nulla. Aenean ut facilisis justo. Mauris commodo tellus quis feugiat molestie. Pellentesque tortor purus, sollicitudin vitae sapien vel, varius convallis quam</p>
+                    <a href="">Read More &#8250;</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Gallery-->
+        <section class="gallery">
+            <h4>Gallery</h4>
+            <div class="galleryContainer">
+                <div class="column">
+                    <div class="photo">
+                        <img class="img" src="Assets/Images/gallery1.jpg" alt="">
+                    </div>
+                    <div class="photo">
+                        <img class="img" src="Assets/Images/gallery2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img class="img" src="Assets/Images/gallery3.jpg" alt="">
+                    </div>
+                    <div class="photo">
+                        <img class="img" src="Assets/Images/gallery4.jpg" alt="">
+                    </div>
+                    <div class="photo">
+                        <img class="img" src="Assets/Images/gallery5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="photo">
+                        <img class="img" src="Assets/Images/gallery6.jpg" alt="">
+                    </div>
+                    <div class="photo">
+                        <img class="img" src="Assets/Images/gallery7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="contactUs">
+            <h4>Contact Us</h4>
+            <div class="more">
+                <iframe class="mapEmbed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.9083745444614!2d-96.9935045248878!3d32.84767758037252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e837caf4f1189%3A0xabb9ca7f37d9754a!2sDhido%20nepali%20restaurant%20%26%201%20Stop%20Meat%20Shop!5e0!3m2!1sen!2sus!4v1734032886827!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contactUsMore">
+                    <h6>Get In Touch</h6>
+                    <form class="contactForm">
+                        <input class="contactInputs" type="text" id="name" name="name" required placeholder="Name*">
+    
+                        <input class="contactInputs" type="email" id="email" name="email" required placeholder="example@email.com*">
+    
+                        <input class="contactInputs" type="tel" id="phone" name="tel" placeholder="123-456-7890">                    
+                        <textarea class="contactInputs" id="message" name="message" placeholder="Your Message*"></textarea>
+                        <button class="redButton" id="sendButton">Send Message</button>
+                        <p id="feedbackMessage" style="display: none;"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="top">
+            <div class="col1">
+                <h6>
+                    Dhido Nepali Restaurant <br> & One Stop Meat Shop
+                </h6>
+                <div class="socials">
+                    <div class="socials">
+                        <div class="social-item">
+                          <i class="fas fa-phone-alt"></i>
+                          <a href="tel:+19726009042">+1 (972) 600-9042</a>
+                        </div>
+                        <div class="social-item">
+                          <i class="fas fa-envelope"></i>
+                          <a href="mailto:dhidonepalirestaurant3305@gmail.com">dhidonepalirestaurant3305@gmail.com</a>
+                        </div>
+                        <div class="social-item">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <a href="https://maps.app.goo.gl/YmKfptfizuGyrTmW7" target="_blank">
+                            3305 W Rochelle Rd, Irving, TX 75062
+                          </a>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+            <div class="col2">
+                <h6>Information</h6>
+                <p>Recommended Items</p>
+                <p>Full Menu</p>
+                <p>Reviews</p>
+                <p>About Us</p>
+                <p>Gallery</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="col3">
+                <h6>Opening Hours</h6>
+                <p>Monday: Closed</p>
+                <p>Tuesday: 9AM - 1AM</p>
+                <p>Wednesday: 9AM - 1AM</p>
+                <p>Thursday: 9AM - 1AM</p>
+                <p>Friday: 9AM - 1AM</p>
+                <p>Saturday: 9AM - 1AM</p>
+                <p>Sunday: 9AM - 1AM</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>© Dhido Nepali Restaurant & One Stop Meat Shop 2024. All rights reserved.</p>
+            <p>Designed and Developed by <span class="Webspansion">Webspansion</span></p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

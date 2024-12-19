@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Stop Meat Shop</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+
+
+
+    <!--Linking Email JS-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "6iqCoi9OLI6mO4co_",
+        });
+    })();
+    </script>
+
+
+
+</head>
+<body id="individualItemBody">
+    <special-nav></special-nav>
+
+
+    <main id="itemContainer" >
+        <h5 id="itemType">Title</h5>
+        <div id="itemTypeBlock" style="display: none;">
+            <div id="itemNameBlock">
+                <div class="left">
+                    <h6 id="itemNameTitle">Item Title</h6>
+                    <img id="itemImage" src="Assets/menuItems/pressureCookerMomo.png" alt="">
+                    <div class="price">
+                        <p id="itemRegPrice">$9.99 Regular</p>
+                        <p id="itemMorePrice">2x Spicy: $10.99</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <p id="itemDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsam dolores fugit, maxime quos voluptatum molestiae alias exercitationem minima optio qui architecto sequi sit aspernatur tempora corporis enim dolorum voluptate.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <special-contact></special-contact>
+    <special-footer></special-footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

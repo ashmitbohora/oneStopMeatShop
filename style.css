@@ -1,0 +1,1160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    --regularRed: #750000;
+    --regularWhite: #FAF3EB;
+
+    --mFont: "Montserrat", sans-serif;
+    --oFont: "Oswald", sans-serif;
+    --pFont: "Poppins", sans-serif;
+}
+
+
+body{
+    background-color: var(--regularWhite);
+}
+
+/* Reusable Elements */
+
+
+h4{
+    font-size: 2.5rem;
+    font-family: var(--pFont);
+    text-decoration: underline;
+
+}
+
+h6{
+    font-size: 1.5rem;
+    font-family: var(--pFont);
+
+}
+
+
+
+a{
+    all: inherit;
+}
+
+
+p, a{
+    font-family: var(--pFont);
+    font-family: "Poppins" sans-serif;
+}
+
+button{
+    all: unset;
+}
+
+.redButton{
+    background-color: var(--regularRed);
+    padding: 15px 25px;
+    font-size: 1.5rem;
+
+    color: white;
+    font-family: var(--mFont);
+    font-weight: 800;
+
+    cursor: pointer;
+    
+
+    border-radius: 10px;
+}
+
+
+
+section{
+    padding: 150px 0;
+}
+ 
+
+
+
+
+
+/* Nav bar */
+
+header{
+    background-color: var(--regularRed);
+}
+
+.navBars{
+    display: none;
+}
+
+.navMobile{
+    display: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+
+    padding: 15px 0px;
+}
+
+nav img{
+    width: 80px;
+}
+
+nav .right{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    font-size: 1.2rem;
+}
+
+
+
+/* Landing page */
+
+
+.landingPage{
+    background-image: url(Assets/Images/mainPageImage.png);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 90vh;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: relative;
+    color: white;
+}
+
+.landingPage::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.landingPage .more{
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+
+
+.landingPage h1{
+    font-size: 6rem;
+    font-family: var(--mFont);
+}
+
+.landingPage h2{
+    font-size: 3rem;
+    font-family: var(--oFont);
+}
+
+.landingPage h3{
+    font-size: 2rem;
+    font-family: var(--pFont);
+}
+
+.landingPage .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 40px;
+
+}
+
+
+
+.fa-chevron-down{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    font-size: 3rem;
+
+    animation: bounce 3s infinite alternate-reverse linear; 
+}
+
+.landingPage .more{
+    margin-top: -100px;
+}
+
+.fa-chevron-down{
+    bottom: 80px;
+}
+
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Reccomended Items */
+
+.foodList{
+    background-color: var(--regularRed);
+    padding: 75px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+    gap: 50px;
+}
+
+.foodCardContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    
+    width: 95%;
+    overflow: scroll;
+}
+
+.foodCard{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    min-width: 300px;
+    padding: 15px 15px 50px 15px;
+
+    gap: 10px;
+
+    position: relative;
+
+    border-radius: 10px;
+
+}
+
+.foodCard img{
+    width: 100%;
+}
+
+.foodCard button{
+    position: absolute;
+    font-size: 1rem;
+    padding: 5px 10px;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 10px;
+
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.5);
+}
+
+.foodList h4{
+    color: white;
+    font-size: 2rem;
+}
+
+.foodList h6{
+    font-size: 1.3rem;
+}
+
+/* Full Menu */
+
+
+.fullMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px 0px;
+    gap: 30px;
+}
+
+.fullMenu h4{
+    color: var(--regularRed);
+}
+
+.menuContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+
+    text-align: center;
+    flex-wrap: wrap;
+
+    gap: 100px;
+
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+
+.menu-block{
+    min-width: 450px;
+
+    border: 1px solid rgba(117, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.twoBlocks .menu-block{
+    margin-bottom: 20px;
+
+}
+
+.twoBlocks{
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.menu-block-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    gap: 20px;
+
+    margin-bottom: 10px;
+}
+
+.menu-block-title button{
+    margin-right: auto;
+    padding: 7px 14px;
+    font-weight: 600;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    position: relative;
+    color: black;
+
+    transition: all 0.3s ease;
+
+    z-index: 1;
+
+    padding: 5px;
+
+    user-select: none;
+    cursor: default;
+
+    border-radius: 10px;
+
+
+}
+
+.menu-item:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.menu-item::before{
+    content: "";
+    inset: 0;
+
+    border:1px solid #750000;
+    background-color: rgba(117, 0, 0, 0.8);
+    position: absolute;
+
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+
+    z-index: -1;
+
+    border-radius: 5px;
+}
+
+.menu-item:hover::before{
+    opacity: 1;
+}
+
+.menu-item:hover:active{
+    background-color: rgba(117, 0, 0, 0.9);
+}
+
+
+
+
+
+.menu-item p:first-child{
+    margin-right: auto;
+}
+
+.spicyMenu{
+    padding: 15px 0;
+    color: #750000;
+    font-weight: 600;
+}
+
+
+.regularPrice, .higherPrice{
+    min-width: 65px;
+    text-align: center;
+}
+
+
+
+.longerButton{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/* Review page */
+
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--regularRed);
+    padding: 50px 20px;
+
+    width: 100%;
+}
+
+.reviewsTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+}
+
+
+
+.reviews h4{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.reviews button{
+    color: var(--regularRed);
+    background-color: white;
+    font-weight: bold;
+    width: clamp(250px, 40%, 80vw);
+    text-align: center;
+    padding: 10px 20px;
+
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+
+.reviewsContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+
+    overflow-x: scroll;
+
+    position: relative;
+
+}
+
+.reviewButtons{
+    display: flex;
+}
+
+.reviewButtons i{
+    background-color: white;
+    padding: 10px;
+}
+
+.fa-chevron-left{
+    margin-right: 10px;
+}
+
+
+
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+
+    padding: 15px 15px 40px 15px;
+
+    min-width: 300px;
+    gap: 20px;
+}
+
+.review .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+.reviewProfilePic{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+/* About Us Page */
+
+
+.aboutUsImg{
+    width: 400px;
+    height: 300px;
+    background-color: lightgray;
+
+    background-image: url(Assets/Images/aboutUsImage.jpg);
+    background-size: cover;
+
+    border-radius: 20px;
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+}
+
+.aboutUs .more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+}
+
+
+
+.aboutUsInfo{
+    max-width: 550px;
+}
+
+
+.aboutUsInfo a{
+    color: var(--regularRed);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+
+/* Gallery */
+
+.gallery{
+    border-top: 6px solid rgba(117, 0, 0, 0.18); 
+    background-color: white;
+    text-align: center;
+}
+
+.gallery h4{
+    margin-bottom: 25px;
+}
+
+.galleryContainer{
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+
+
+    display: flex;
+    gap: 20px;
+    
+
+    max-width: 1200px;
+    
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+/* Contact Us Page */
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    border-top: 6px solid rgba(117, 0, 0, 0.18); 
+}
+
+.contactUs .more{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+
+    flex-wrap: wrap-reverse;
+
+    gap: 40px;
+}
+
+
+.contactUsMore{
+    background-color: white;
+    padding: 40px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.mapEmbed{
+    width: 480px;
+    height: 500px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+
+    width: 400px;
+
+    gap: 10px;
+
+}
+
+.contactInputs{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    resize: none;
+    width: 100%;
+    padding: 10px 5px;
+
+
+    font-family: var(--pFont);
+}
+
+.contactUsMore textarea{
+    height: 150px;
+}
+
+.contactInputs:focus {
+    border-color: #750000; 
+    background-color: rgba(117, 0, 0, 0.1); 
+    outline: none;
+}
+
+.contactInputs::placeholder{
+    color: #aaa; 
+    font-style: italic;
+    font-size: 14px; 
+    opacity: 1;
+
+
+    font-family: var(--pFont);
+}
+
+
+
+
+
+.contactForm button{
+    font-size: 1rem;
+    padding: 10px 14px;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+
+    letter-spacing: normal;
+
+    transition: all 0.2s;
+}
+
+
+.contactForm button:hover{
+    letter-spacing: 3px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+
+footer{
+    background-color: #4A0000;
+    color: var(--regularWhite);
+}
+
+footer .top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    padding: 50px 0px;
+
+    width: 90%;
+    margin: 0 auto;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+footer .top h6{
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+
+
+.social-item{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+
+
+
+footer .bottom{
+    background-color: #2E0000;
+    text-align: center;
+
+    padding: 15px;
+}
+
+.Webspansion{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Individual Item Page */
+
+#individualItemBody .contactUs{
+    background-color: white;
+}
+
+#itemContainer{
+    padding: 50px 0;
+}
+
+#itemType{
+    font-size: 3rem;
+    font-family: var(--mFont);
+    text-align: center;
+    margin-top: 50px;
+}
+
+#itemTypeBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    margin: 0 auto;
+
+    gap: 50px;
+
+    padding: 50px 20px;
+}
+
+
+
+#itemNameBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70%;
+    margin: 0 auto;
+}
+
+#itemTypeBlock .price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+#itemTypeBlock .left{
+    margin-right: 50px;
+}
+
+#itemTypeBlock .left p{
+    color: var(--regularRed);
+    font-weight: 600;
+}
+
+#itemTypeBlock .right{
+    width: 50%;
+}
+
+#itemTypeBlock .right p{
+    font-weight: 600;
+}
+
+#itemcontainer img{
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.highlightElement{
+    animation: highlightElement 3s ease-in-out;
+    border-radius: 20px;
+}
+
+
+@keyframes highlightElement{
+    0%{
+        background-color: rgba(117, 0, 0, 0);
+        border: 2px solid rgba(117, 0, 0, 0);
+    }
+    30%{
+        background-color: rgba(117, 0, 0, 0.5);
+        border: 2px solid rgba(117, 0, 0, 0.6);
+    }
+    100%{
+        background-color: rgba(117, 0, 0, 0);
+        border: 2px solid rgba(117, 0, 0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+    
+    .landingPage{
+        min-height: 80vh;
+        padding: 200px 0px;
+    }
+
+    .landingPage h1{
+        font-size: clamp(4rem, 10vw, 7rem);
+    }
+
+    .landingPage h2{
+        font-size: clamp(2.5rem, 7vw, 5rem);
+    }
+
+    .landingPage h3{
+        font-size: clamp(2rem, 5vw, 4rem);
+    }
+
+
+
+
+
+}
+
+
+
+@media (max-width: 768px){
+
+
+
+    .navMobile{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        min-width: 100vw;
+        background-color: var(--regularRed);
+        z-index: 999;
+        transition: all 1s;
+    }
+
+    nav .right{
+        display: none;
+    }
+
+    .navHidden{
+        right: -200%;
+    }
+
+    .navMobileLinks{
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .fa-xmark{
+        position: absolute;
+        top: 5%;
+        right: 0;
+        padding: 40px;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .navBars{
+        display: block;
+    }
+
+    .navIcons{
+        font-size: 1.5rem;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .landingPage h1{
+        font-size: clamp(3rem, 10vw, 7rem);
+    }
+
+    .landingPage h2{
+        font-size: clamp(2rem, 7vw, 5rem);
+    }
+
+    .landingPage h3{
+        font-size: clamp(1.5rem, 5vw, 4rem);
+    }
+
+
+}
+
+
+
+@media (max-width: 650px){
+
+    h4{
+        font-size: 2rem;
+    }
+
+    .redButton{
+        font-size: 1.25rem;
+    }
+
+    .menu-block-title button{
+        padding: 5px 10px;
+    }
+
+
+
+
+
+    .menu-block{
+        min-width: 250px;
+        width: 100%;
+        text-align: left;
+    }
+    .menu-block p{
+        font-size: 0.9rem;
+    }
+
+    .menu-item{
+        gap: 5px;
+    }
+
+    .menu-block-title{
+        gap: 5px;
+    }
+
+    .twoBlocks{
+        width: 100%;
+        min-width: 250px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .mapEmbed, .contactUsMore{
+        width: 85vw;
+    }
+    .contactForm{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    footer .top {
+        align-items: center;
+        text-align: center;
+
+        gap: 50px;
+    }
+
+    .social-item {
+        text-align: center;
+    }
+    
+}

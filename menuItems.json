@@ -1,0 +1,619 @@
+[
+    {
+        "category": "starter",
+        "items": [
+            {
+                "name": "Pork Belly Sadeko",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "Juicy and tender pork belly marinated with Nepali spices, then tossed with fresh herbs and lemon juice. Perfect for a tangy and savory start."
+            },
+            {
+                "name": "Chatpate",
+                "priceReg": "$6.99",
+                "priceSpicy": "$7.99",
+                "desc": "A crunchy, tangy, and spicy mix of puffed rice, lentils, and fresh veggies, blended with a zesty tamarind sauce."
+            },
+            {
+                "name": "Waiwai Sadheko",
+                "priceReg": "$5.99",
+                "priceSpicy": "$7.99",
+                "desc": "Crispy Wai Wai noodles mixed with onions, tomatoes, and chilies, garnished with fresh cilantro for a spicy, satisfying bite."
+            },
+            {
+                "name": "Aloo Chop",
+                "priceReg": "$5.99",
+                "priceSpicy": "$7.99",
+                "desc": "Deep-fried potato patties filled with spiced mashed potatoes, coated in breadcrumbs for a crisp exterior and soft inside."
+            },
+            {
+                "name": "Piro Aloo",
+                "priceReg": "$7.99",
+                "priceSpicy": "$8.99",
+                "desc": "Boiled potatoes tossed in chili powder, mustard oil, and Himalayan herbs for a flavorful, spicy kick."
+            },
+            {
+                "name": "Malekhu Macha",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "Traditional Nepali grilled fish, lightly seasoned with salt, turmeric, and mustard oil for a smoky, authentic flavor."
+            },
+            {
+                "name": "Chicken 65",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "A popular Indian starter, featuring deep-fried chicken cubes coated in a spicy yogurt-based marinade with aromatic curry leaves."
+            },
+            {
+                "name": "Chicken Chilli",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "Succulent chicken pieces stir-fried with peppers, onions, and a tangy soy-chili sauce for a perfect Indo-Chinese treat."
+            },
+            {
+                "name": "Omelette",
+                "priceReg": "$4.99",
+                "priceSpicy": "$5.99",
+                "desc": "A fluffy, golden omelette prepared with fresh eggs, onions, tomatoes, and chilies for a satisfying breakfast or starter."
+            },
+            {
+                "name": "Buff Chatpate",
+                "priceReg": "$12.99",
+                "priceSpicy": "$13.99",
+                "desc": "Buffalo meat mixed with puffed rice, lentils, chilies, and tamarind for a bold and spicy appetizer."
+            },
+            {
+                "name": "Buff Achar Chatpate",
+                "priceReg": "$15.99",
+                "priceSpicy": "$16.99",
+                "desc": "A tangy and spicy buffalo dish paired with Nepali-style pickle and puffed rice, offering a robust burst of flavors."
+            },
+            {
+                "name": "Sausage Stick",
+                "priceReg": "$4.99",
+                "priceSpicy": "$5.99",
+                "desc": "Grilled sausage skewers marinated in spices, served with a tangy dipping sauce for a quick and tasty snack."
+            },
+            {
+                "name": "Aloo Stick",
+                "priceReg": "$4.99",
+                "priceSpicy": "$5.99",
+                "desc": "Deep-fried potato sticks coated in a spiced batter, delivering a crispy and flavorful snack."
+            }
+        ]
+    },
+
+
+    {
+        "category": "momo",
+        "items": [
+            {
+                "name": "Chicken Steam/Kothey",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "Steamed or pan-fried chicken dumplings served with a spicy tomato dipping sauce."
+            },
+            {
+                "name": "Veg Steam/Kothey",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "Vegetarian dumplings filled with fresh vegetables, served steamed or pan-fried."
+            },
+            {
+                "name": "Pork Steam/Kothey",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "Juicy pork dumplings served either steamed or pan-fried to perfection."
+            },
+            {
+                "name": "Mutton Steam/Kothey",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Mutton dumplings with a tender filling, steamed or pan-fried to order."
+            },
+            {
+                "name": "Veg Fried Chilli",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Fried vegetarian dumplings tossed with spicy chili sauce and garnished with fresh herbs."
+            },
+            {
+                "name": "Chicken Fried Chilli",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Spicy fried chicken dumplings cooked with a bold chili sauce."
+            },
+            {
+                "name": "Pork Fried Chilli",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Pork dumplings fried and mixed with a zesty chili sauce for added heat."
+            },
+            {
+                "name": "Mutton Fried Chilli",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "Tender mutton dumplings fried and tossed with a fiery chili sauce."
+            },
+            {
+                "name": "Veg Jhol",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Vegetarian dumplings in a tangy, flavorful jhol (soup) base."
+            },
+            {
+                "name": "Chicken Jhol",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Chicken dumplings served in a hearty and spicy jhol soup."
+            },
+            {
+                "name": "Pork Jhol",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Pork dumplings paired with a rich jhol soup base."
+            },
+            {
+                "name": "Mutton Jhol",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "Mutton dumplings served with a delicious and warming jhol soup."
+            },
+            {
+                "name": "Veg Tikka Fried Masala",
+                "priceReg": "$10.99",
+                "priceSpicy": "$12.99",
+                "desc": "Fried vegetarian dumplings coated in a bold tikka masala sauce."
+            },
+            {
+                "name": "Chicken Tikka Fried",
+                "priceReg": "$10.99",
+                "priceSpicy": "$12.99",
+                "desc": "Spicy fried chicken dumplings tossed in a rich tikka masala sauce."
+            },
+            {
+                "name": "Pressure Cooker Momo",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "Special momos cooked to perfection in a pressure cooker for a unique flavor."
+            }
+        ]
+    },
+
+
+    {
+        "category": "chowmein",
+        "items": [
+            {
+                "name": "Veg Chowmein",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "Stir-fried noodles with fresh vegetables in a savory sauce."
+            },
+            {
+                "name": "Chicken Chowmein",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Flavorful stir-fried noodles with chicken and veggies in a light soy-based sauce."
+            },
+            {
+                "name": "Pork Chowmein",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Savory pork stir-fried with noodles and vegetables."
+            },
+            {
+                "name": "Mutton Chowmein",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "Tender mutton stir-fried with noodles and spices."
+            },
+            {
+                "name": "Mixed Chowmein",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "A combination of chicken, pork, and vegetables stir-fried with noodles."
+            },
+            {
+                "name": "Buff Chowmein",
+                "priceReg": "$14.99",
+                "priceSpicy": "$15.99",
+                "desc": "Buffalo meat stir-fried with noodles and aromatic spices."
+            },
+            {
+                "name": "Chicken Bhutuwa Chowmein",
+                "priceReg": "$13.99",
+                "priceSpicy": "$14.99",
+                "desc": "A Nepali twist with stir-fried noodles, chicken, and rich spices."
+            },
+            {
+                "name": "Mutton Sukuti Chowmein",
+                "priceReg": "$14.99",
+                "priceSpicy": "$15.99",
+                "desc": "Dry mutton pieces stir-fried with noodles and flavorful spices."
+            },
+            {
+                "name": "Pork Sukuti Chowmein",
+                "priceReg": "$13.99",
+                "priceSpicy": "$14.99",
+                "desc": "Savory pork stir-fried with noodles, Sukuti style."
+            },
+            {
+                "name": "Buff Packet Chowmein",
+                "priceReg": "$16.99",
+                "priceSpicy": "$17.99",
+                "desc": "Packet-style buffalo meat stir-fried with noodles."
+            },
+            {
+                "name": "Buff Sukuti Chowmein",
+                "priceReg": "$15.99",
+                "priceSpicy": "$16.99",
+                "desc": "Rich buffalo Sukuti stir-fried with noodles for a hearty dish."
+            }
+        ]
+    },
+
+    {
+        "category": "thali",
+        "items": [
+            {
+                "name": "Mutton Thali",
+                "priceReg": "$13.99",
+                "priceExtraSoup": "$1.49",
+                "desc": "A traditional Nepali platter with mutton curry, rice, and side dishes, with an option for extra soup."
+            },
+            {
+                "name": "Chicken Thali",
+                "priceReg": "$13.49",
+                "priceExtraSoup": "$1.49",
+                "desc": "Delicious chicken curry served with rice and traditional Nepali sides, with extra soup available."
+            },
+            {
+                "name": "Veg Thali",
+                "priceReg": "$11.99",
+                "priceExtraSoup": "$1.49",
+                "desc": "A vegetarian Nepali platter with rice, lentils, and a variety of vegetable curries."
+            },
+            {
+                "name": "Pork Thali",
+                "priceReg": "$13.49",
+                "priceExtraSoup": "$1.49",
+                "desc": "Pork curry served with rice, lentils, and Nepali side dishes, with optional extra soup."
+            },
+            {
+                "name": "Fish Thali",
+                "priceReg": "$13.49",
+                "priceExtraSoup": "$1.49",
+                "desc": "A flavorful fish curry served with rice and traditional Nepali sides."
+            },
+            {
+                "name": "Chicken Bhutuwa Thali",
+                "priceReg": "$14.49",
+                "priceExtraSoup": "$1.49",
+                "desc": "Stir-fried chicken with Nepali spices served with rice, lentils, and sides."
+            },
+            {
+                "name": "Mutton Bhutuwa Thali",
+                "priceReg": "$14.99",
+                "priceExtraSoup": "$1.49",
+                "desc": "Nepali stir-fried mutton paired with rice, lentils, and traditional accompaniments."
+            },
+            {
+                "name": "Pork Bhutuwa Thali",
+                "priceReg": "$14.49",
+                "priceExtraSoup": "$1.49",
+                "desc": "Stir-fried pork with Nepali spices served in a traditional platter."
+            },
+            {
+                "name": "Buff Sukuti Thali",
+                "priceReg": "$15.99",
+                "priceExtraSoup": "$1.49",
+                "desc": "Buffalo Sukuti served with rice, lentils, and Nepali sides."
+            },
+            {
+                "name": "Local Chicken Bhutuwa",
+                "priceReg": "$14.49",
+                "priceExtraSoup": "$1.49",
+                "desc": "Local chicken prepared Nepali Bhutuwa style served with rice and sides."
+            },
+            {
+                "name": "Mutton Sukuti Thali",
+                "priceReg": "$14.99",
+                "priceExtraSoup": "$1.49",
+                "desc": "Traditional mutton Sukuti served with rice and Nepali side dishes."
+            },
+            {
+                "name": "Local Chicken Thali",
+                "priceReg": "$13.99",
+                "priceExtraSoup": "$1.49",
+                "desc": "A platter featuring local chicken curry served with rice, lentils, and sides."
+            }
+        ]
+    },
+
+    {
+        "category": "fried-rice",
+        "items": [
+            {
+                "name": "Veg Fried Rice",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Stir-fried rice with fresh vegetables and light spices."
+            },
+            {
+                "name": "Chicken Fried Rice",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "Stir-fried rice with tender chicken pieces and flavorful seasoning."
+            },
+            {
+                "name": "Egg Fried Rice",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Classic fried rice with scrambled eggs and spices."
+            },
+            {
+                "name": "Mutton Fried Rice",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "Rice stir-fried with tender mutton and flavorful seasonings."
+            },
+            {
+                "name": "Pork Fried Rice",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Fried rice cooked with savory pork and fresh vegetables."
+            },
+            {
+                "name": "Mixed Fried Rice",
+                "priceReg": "$11.99",
+                "priceSpicy": "$12.99",
+                "desc": "A combination of chicken, pork, and vegetables stir-fried with rice."
+            },
+            {
+                "name": "Buff Fried Rice",
+                "priceReg": "$14.99",
+                "priceSpicy": "$15.99",
+                "desc": "Rich buffalo meat fried with rice and Nepali spices."
+            },
+            {
+                "name": "Paneer Fried Rice",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "Vegetarian fried rice with paneer (Indian cottage cheese) and veggies."
+            },
+            {
+                "name": "Buff Sukuti Fried Rice",
+                "priceReg": "$16.99",
+                "priceSpicy": "$17.99",
+                "desc": "Buffalo Sukuti stir-fried with rice and spices."
+            },
+            {
+                "name": "Mutton Sukuti Fried Rice",
+                "priceReg": "$12.99",
+                "priceSpicy": "$13.99",
+                "desc": "Dry mutton Sukuti stir-fried with rice for a hearty dish."
+            },
+            {
+                "name": "Pork Sukuti Fried Rice",
+                "priceReg": "$11.99",
+                "priceSpicy": "$12.99",
+                "desc": "Pork Sukuti stir-fried with rice and Nepali spices."
+            }
+        ]
+    },
+
+    {
+        "category": "biryani",
+        "items": [
+            {
+                "name": "Chicken Biryani",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "Aromatic basmati rice cooked with tender chicken and rich spices."
+            },
+            {
+                "name": "Veg Biryani",
+                "priceReg": "$8.99",
+                "priceSpicy": "$9.99",
+                "desc": "A delightful vegetarian biryani with fresh vegetables and fragrant spices."
+            },
+            {
+                "name": "Mutton Biryani",
+                "priceReg": "$10.99",
+                "priceSpicy": "$11.99",
+                "desc": "Flavorful basmati rice cooked with succulent mutton and a blend of spices."
+            },
+            {
+                "name": "Paneer Biryani",
+                "priceReg": "$9.99",
+                "priceSpicy": "$10.99",
+                "desc": "A vegetarian biryani featuring paneer (Indian cottage cheese) and fragrant spices."
+            }
+        ]
+    },
+
+    {
+        "category": "sekuwa",
+        "items": [
+            {
+                "name": "Chicken Sekuwa",
+                "priceReg": "$11.99",
+                "priceSpicy": "$12.99",
+                "desc": "Grilled chicken skewers marinated in Nepali spices."
+            },
+            {
+                "name": "Mutton Sekuwa",
+                "priceReg": "$13.99",
+                "priceSpicy": "$14.99",
+                "desc": "Juicy mutton skewers grilled to perfection with Nepali spices."
+            },
+            {
+                "name": "Pork Sekuwa",
+                "priceReg": "$11.99",
+                "priceSpicy": "$12.99",
+                "desc": "Tender pork skewers grilled with a flavorful spice blend."
+            },
+            {
+                "name": "Mutton Taas",
+                "priceReg": "$13.49",
+                "priceSpicy": "$13.99",
+                "desc": "Pan-fried mutton with Nepali spices, served hot."
+            },
+            {
+                "name": "Bhuttan",
+                "priceReg": "$11.99",
+                "priceSpicy": "$12.99",
+                "desc": "Nepali-style stir-fried offal dish, rich in flavor and spices."
+            }
+        ]
+    },
+
+    {
+        "category": "breakfast",
+        "items": [
+            {
+                "name": "Aloo Paratha",
+                "priceReg": "$6.99",
+                "desc": "Stuffed flatbread with spiced mashed potatoes, served with chutney or yogurt."
+            },
+            {
+                "name": "Samosa (2 pcs)",
+                "priceReg": "$6.99",
+                "desc": "Crispy fried pastry stuffed with spiced potatoes and peas."
+            },
+            {
+                "name": "Selroti (2 pcs)",
+                "priceReg": "$6.99",
+                "desc": "Traditional Nepali ring-shaped rice bread, slightly sweet and crispy."
+            },
+            {
+                "name": "Chana Tarkari",
+                "priceReg": "$2.49",
+                "desc": "Nepali-style chickpea curry, mildly spiced."
+            },
+            {
+                "name": "Aloo Matar Tarkari",
+                "priceReg": "$2.49",
+                "desc": "Potato and green pea curry in a light gravy."
+            },
+            {
+                "name": "Raajma Tarkari",
+                "priceReg": "$2.49",
+                "desc": "Kidney bean curry with traditional Nepali spices."
+            },
+            {
+                "name": "Aloo Tama Tarkari",
+                "priceReg": "$2.49",
+                "desc": "Nepali curry made with bamboo shoots and potatoes."
+            },
+            {
+                "name": "Daal",
+                "priceReg": "$1.99",
+                "desc": "Lentil soup, a staple of Nepali cuisine."
+            },
+            {
+                "name": "Omelette",
+                "priceReg": "$4.99",
+                "desc": "Classic omelette with onions, tomatoes, and mild spices."
+            },
+            {
+                "name": "Chana Fry",
+                "priceReg": "$7.99",
+                "desc": "Spicy stir-fried chickpeas, a popular breakfast item."
+            },
+            {
+                "name": "Boiled Egg",
+                "priceReg": "$1.49",
+                "desc": "Perfectly boiled egg, served as a quick breakfast or snack."
+            }
+        ]
+    },
+
+    {
+        "category": "sukuti",
+        "items": [
+            {
+                "name": "Mutton Sukuti",
+                "priceReg": "$13.99",
+                "priceSpicy": "$14.99",
+                "desc": "Dried mutton jerky stir-fried with Nepali spices."
+            },
+            {
+                "name": "Buff Sukuti",
+                "priceReg": "$14.99",
+                "priceSpicy": "$15.99",
+                "desc": "Buffalo Sukuti, stir-fried for a rich and hearty flavor."
+            },
+            {
+                "name": "Buff Sukuti Sadheko",
+                "priceReg": "$14.99",
+                "priceSpicy": "$15.99",
+                "desc": "Buffalo Sukuti tossed with onions, chilies, and spices."
+            },
+            {
+                "name": "Mutton Sukuti Sadheko",
+                "priceReg": "$13.99",
+                "priceSpicy": "$14.99",
+                "desc": "Dried mutton jerky mixed with Nepali spices for a tangy and spicy flavor."
+            }
+        ]
+    },
+
+    {
+        "category": "curry",
+        "items": [
+            {
+                "name": "Chicken Tikka Masala",
+                "priceReg": "$11.99",
+                "desc": "Creamy and spiced chicken curry cooked in a tomato-based sauce."
+            },
+            {
+                "name": "Butter Chicken Masala",
+                "priceReg": "$11.99",
+                "desc": "Rich butter chicken curry with a creamy tomato base."
+            },
+            {
+                "name": "Paneer Tikka Masala",
+                "priceReg": "$10.99",
+                "desc": "Grilled paneer in a flavorful tomato and cream-based curry."
+            },
+            {
+                "name": "Fish Curry",
+                "priceReg": "$9.99",
+                "desc": "Aromatic fish curry with a blend of Nepali spices."
+            },
+            {
+                "name": "Pork Curry",
+                "priceReg": "$9.99",
+                "desc": "Savory pork curry cooked with Nepali spices."
+            },
+            {
+                "name": "Mutton Curry",
+                "priceReg": "$10.99",
+                "desc": "Slow-cooked mutton curry with traditional Nepali spices."
+            },
+            {
+                "name": "Chicken Curry",
+                "priceReg": "$9.99",
+                "desc": "Classic chicken curry with a rich and spicy gravy."
+            },
+            {
+                "name": "Local Chicken Curry",
+                "priceReg": "$11.99",
+                "desc": "Traditional Nepali curry made with locally sourced chicken."
+            }
+        ]
+    }
+
+
+    
+    
+
+
+
+
+
+
+
+]
