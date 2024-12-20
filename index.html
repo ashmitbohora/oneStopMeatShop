@@ -35,7 +35,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <img src="Assets/Icons/logoImage.png" alt="">
             <div class="navBars">
@@ -50,10 +50,10 @@
             <nav class="navMobile navHidden">
                 <div class="navMobileLinks">
                     <a href="index.html"><img src="Assets/Icons/logoImage.png" class="navImage navMobileImage" alt="One Stop Meat Shop Logo"></a>
-                    <a class="navLinks" href="">Menu</a>
-                    <a class="navLinks" href="">Hours</a>
-                    <a class="navLinks" href="">Gallery</a>
-                    <a class="navLinks" href="">Contact Us</a>
+                    <a class="navLinks" href="#full-menu">Menu</a>
+                    <a class="navLinks" href="#hours">Hours</a>
+                    <a class="navLinks" href="#gallery">Gallery</a>
+                    <a class="navLinks" href="#contact-us">Contact Us</a>
                     <i class="fa-solid fa-xmark navIcons"></i>
                 </div>
             </nav>
@@ -63,7 +63,7 @@
     <main>
 
         <!--Landing Page-->
-        <section class="landingPage">
+        <section id="landing-page" class="landingPage">
             <div class="more">
                 <h1>WELCOME TO</h1>
                 <h2>DHIDO NEPALI RESTAURANT</h2>
@@ -77,7 +77,7 @@
         </section>
 
         <!--Recommended Items-->
-        <section class="foodList">
+        <section id="recommended-items" class="foodList">
             <h4>Recommended Items</h4>
             <div class="foodCardContainer">
                 <div class="foodCard">
@@ -108,7 +108,7 @@
         </section>
 
         <!--Full Menu-->
-        <section class="fullMenu">
+        <section id="full-menu" class="fullMenu">
             <h4>Full Menu</h4>
             <section class="menuContainer">
                 
@@ -707,7 +707,7 @@
         </section>
 
         <!--Reviews-->
-        <section class="reviews">
+        <section id="reviews" class="reviews">
             <div class="reviewsTop">
                 <h4>Reviews</h4>
                 <div class="reviewButtons">
@@ -781,11 +781,10 @@
         </section>
 
         <!--About Us Page-->
-        <section class="aboutUs">
+        <section id="about-us" class="aboutUs">
             <h4>About Us</h4>
             <div class="more">
-                <div class="aboutUsImg"></div>
-
+                <img class="aboutUsImg" src="Assets/Images/aboutUsImage.jpg" alt="">
                 <div class="aboutUsInfo">
                     <p>Lorem ispum id magna aliquam, vehicula arcu eu, mollis libero. Ut libero magna, laoreet quis risus sit amet, blandit sagittis massa. Proin ac leo neque. In hac habitasse platea dictumst. Mauris malesuada accumsan dictum. Proin risus justo, semper sit amet enim vitae, auctor pellentesque arcu. Mauris vitae laoreet eros. Fusce sit amet odio luctus, ornare odio in, dictum nulla. Mauris venenatis scelerisque metus, sed eleifend neque rutrum quis. Ut nec magna sed ex ornare tincidunt sed vel nulla. Aenean ut facilisis justo. Mauris commodo tellus quis feugiat molestie. Pellentesque tortor purus, sollicitudin vitae sapien vel, varius convallis quam</p>
                     <a href="">Read More &#8250;</a>
@@ -795,42 +794,21 @@
 
 
         <!--Gallery-->
-        <section class="gallery">
+        <section id="gallery" class="gallery"> 
             <h4>Gallery</h4>
             <div class="galleryContainer">
-                <div class="column">
-                    <div class="photo">
-                        <img class="img" src="Assets/Images/gallery1.jpg" alt="">
-                    </div>
-                    <div class="photo">
-                        <img class="img" src="Assets/Images/gallery2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="photo">
-                        <img class="img" src="Assets/Images/gallery3.jpg" alt="">
-                    </div>
-                    <div class="photo">
-                        <img class="img" src="Assets/Images/gallery4.jpg" alt="">
-                    </div>
-                    <div class="photo">
-                        <img class="img" src="Assets/Images/gallery5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="photo">
-                        <img class="img" src="Assets/Images/gallery6.jpg" alt="">
-                    </div>
-                    <div class="photo">
-                        <img class="img" src="Assets/Images/gallery7.jpg" alt="">
-                    </div>
-                </div>
+                <img src="Assets/Images/gallery2.jpg" alt="">
+                <img src="Assets/Images/gallery3.jpg" alt="">
+                <img src="Assets/Images/gallery4.jpg" alt="">
+                <img src="Assets/Images/gallery5.jpg" alt="">
+                <img src="Assets/Images/gallery6.jpg" alt="">
+                <img src="Assets/Images/gallery7.jpg" alt="">
             </div>
 
         </section>
 
 
-        <section class="contactUs">
+        <section id="contact-us" class="contactUs">
             <h4>Contact Us</h4>
             <div class="more">
                 <iframe class="mapEmbed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.9083745444614!2d-96.9935045248878!3d32.84767758037252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e837caf4f1189%3A0xabb9ca7f37d9754a!2sDhido%20nepali%20restaurant%20%26%201%20Stop%20Meat%20Shop!5e0!3m2!1sen!2sus!4v1734032886827!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -857,7 +835,7 @@
 
 
 
-    <footer>
+    <footer id="footer">
         <div class="top">
             <div class="col1">
                 <h6>
@@ -891,7 +869,7 @@
                 <p>Gallery</p>
                 <p>Contact Us</p>
             </div>
-            <div class="col3">
+            <div id="hours" class="col3">
                 <h6>Opening Hours</h6>
                 <p>Monday: Closed</p>
                 <p>Tuesday: 9AM - 1AM</p>

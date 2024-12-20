@@ -5,6 +5,13 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden !important;
+    width: 100vw;
+}
 
 :root {
     --regularRed: #750000;
@@ -237,11 +244,10 @@ nav a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 50px;
-    
+    overflow-x: scroll;
     width: 95%;
-    overflow: scroll;
 }
 
 .foodCard{
@@ -252,6 +258,7 @@ nav a{
     justify-content: flex-start;
 
     min-width: 300px;
+    max-width: 350px;
     padding: 15px 15px 50px 15px;
 
     gap: 10px;
@@ -556,14 +563,7 @@ nav a{
 
 
 .aboutUsImg{
-    width: 400px;
-    height: 300px;
-    background-color: lightgray;
-
-    background-image: url(Assets/Images/aboutUsImage.jpg);
-    background-size: cover;
-
-    border-radius: 20px;
+    width: 350px;
 }
 
 .aboutUs{
@@ -571,7 +571,6 @@ nav a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
     gap: 50px;
 }
 
@@ -583,6 +582,8 @@ nav a{
 
     gap: 50px;
 
+    padding: 20px;
+
 }
 
 
@@ -590,6 +591,7 @@ nav a{
 .aboutUsInfo{
     max-width: 550px;
 }
+
 
 
 .aboutUsInfo a{
@@ -600,12 +602,19 @@ nav a{
 
 
 
+
+
+
+
+
 /* Gallery */
 
 .gallery{
     border-top: 6px solid rgba(117, 0, 0, 0.18); 
     background-color: white;
     text-align: center;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .gallery h4{
@@ -613,35 +622,18 @@ nav a{
 }
 
 .galleryContainer{
-    width: 90%;
+    width: 90vw;
+    height: 500px;
     margin: 0 auto;
-    padding: 40px 0;
-
-
     display: flex;
-    gap: 20px;
-    
 
-    max-width: 1200px;
-    
+    overflow-x: scroll;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.photo img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+.gallery img{
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
-
-
-
-
 
 
 
@@ -985,15 +977,19 @@ footer .bottom{
 
 
     .navMobile{
-        display: block;
+        display: flex;
         position: fixed;
         right: 0;
         top: 0;
         bottom: 0;
-        min-width: 100vw;
+        width: 100%;
         background-color: var(--regularRed);
         z-index: 999;
         transition: all 1s;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     nav .right{
@@ -1006,12 +1002,17 @@ footer .bottom{
 
     .navMobileLinks{
         width: 85%;
+        height: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         gap: 20px;
+    }
+
+    .navMobileLinks a{
+        cursor: pointer;
     }
 
     .fa-xmark{
@@ -1029,7 +1030,12 @@ footer .bottom{
 
     .navIcons{
         font-size: 1.5rem;
+        cursor: pointer;
     }
+
+
+
+    
     
 
 
@@ -1058,6 +1064,13 @@ footer .bottom{
     }
 
 
+    .aboutUs .more{
+        flex-direction: column;
+    }
+
+
+
+
 }
 
 
@@ -1070,10 +1083,16 @@ footer .bottom{
 
     .redButton{
         font-size: 1.25rem;
+        padding: 10px 20px;
     }
 
     .menu-block-title button{
         padding: 5px 10px;
+    }
+
+    .landingPage .buttons{
+        margin-top: 15px;
+        gap: 20px;
     }
 
 
@@ -1133,7 +1152,41 @@ footer .bottom{
 
 @media (max-width: 425px) {
 
-    
+
+    .redButton{
+        font-size: 1.25rem;
+        padding: 10px 20px;
+    }
+
+    .menu-block-title button{
+        padding: 5px 10px;
+    }
+
+    .landingPage .buttons{
+        margin: 0 auto;
+        margin-top: 15px;
+        gap: 0;
+        flex-direction: column;
+
+        width: 90%;
+    }
+
+    .landingPage button{
+        width: 100%;
+    }
+
+
+    .landingPage h1{
+        font-size: 2.5rem;
+    }
+
+    .landingPage h2{
+        font-size: 1.8rem;
+    }
+
+    .landingPage h3{
+        font-size: 1.4rem;
+    }
 
 
 

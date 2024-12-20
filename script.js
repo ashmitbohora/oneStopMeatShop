@@ -1,9 +1,45 @@
 document.addEventListener("DOMContentLoaded", function(){
 
 
+    // Nav Click button
+
+    const xMark = document.querySelector(".fa-xmark");
+    const hamburger = document.querySelector(".fa-bars");
+    const mobileNav = document.querySelector(".navMobile");
+    const navMobileLinksA = document.querySelectorAll(".navMobileLinks a");
+
+    if (xMark && hamburger && mobileNav){
+        xMark.addEventListener("click", () => {
+            mobileNav.classList.add("navHidden");
+
+        });
+
+        hamburger.addEventListener("click", () => {
+            mobileNav.classList.remove("navHidden");
+
+        });
+
+        navMobileLinksA.forEach((link) => {
+            link.addEventListener("click", () => {
+                mobileNav.classList.add("navHidden");
+            })
+        });
+
+
+
+    };
+
+
+
+
+
+
+
+
+
+
 
     /* Custom elements for Nav Bar, Contact Page, and Footer Page*/
-
     class SpecialNav extends HTMLElement {
         connectedCallback(){
             this.innerHTML = `
@@ -109,30 +145,11 @@ document.addEventListener("DOMContentLoaded", function(){
     customElements.define('special-contact', SpecialContact);
     customElements.define('special-footer', SpecialFooter);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     /* 
-    
     Dynamic Website Changes
-    
     */
-    
-
-
 
     //Custom URL based on Data Set by HTML
-
     const menuItems = document.querySelectorAll(".menu-item");
 
     if (menuItems){
@@ -159,12 +176,7 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     };
 
-
-
-
-
     // Link to JSON File for Menu Data 
-
     fetch('menuItems.json')
     .then(response => response.json())
     .then(menuData => {
