@@ -88,6 +88,8 @@ section{
 
 header{
     background-color: var(--regularRed);
+    display: flex;
+    width: 100%;
 }
 
 .navBars{
@@ -104,11 +106,13 @@ nav{
     align-items: center;
     justify-content: space-between;
 
-    width: 90%;
-    margin: 0 auto;
     color: white;
 
-    padding: 15px 0px;
+    padding: 15px 5px;
+
+    width: 85%;
+    margin: 0 auto;
+
 }
 
 nav img{
@@ -192,21 +196,16 @@ nav a{
 
 .fa-chevron-down{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 50px;
     font-size: 3rem;
 
     animation: bounce 3s infinite alternate-reverse linear; 
+    bottom: 80px;
 }
 
 .landingPage .more{
     margin-top: -100px;
 }
 
-.fa-chevron-down{
-    bottom: 80px;
-}
 
 
 @keyframes bounce {
