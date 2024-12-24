@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Chicken Jhol Momo",
+        "category": "momo",
+        "priceReg": "$9.99",
+        "priceSpicy": "$10.99",
+        "desc": "Chicken dumplings served in a hearty and spicy jhol soup.",
+        "image": "chicken_jhol_momo.png"
+    },
+    {
+        "name": "Butter Chicken",
+        "category": "curry",
+        "priceReg": "$11.99",
+        "desc": "Rich butter chicken curry with a creamy tomato base.",
+        "image": "butter_chicken.png"
+    },
+    {
+        "name": "Chicken Thali",
+        "category": "thali",
+        "priceReg": "$13.49",
+        "priceExtraSoup": "$1.49",
+        "desc": "Delicious chicken curry served with rice and traditional Nepali sides, with extra soup available.",
+        "image": "chicken_thali.png"
+    },
+    {
+        "name": "Buff Chowmein",
+        "category": "chowmein",
+        "priceReg": "$14.99",
+        "priceSpicy": "$15.99",
+        "desc": "Buffalo meat stir-fried with noodles and aromatic spices.",
+        "image": "buff_chowmein.png"
+    },
+    {
+        "name": "Chicken Sekuwa",
+        "category": "sekuwa",
+        "priceReg": "$11.99",
+        "priceSpicy": "$12.99",
+        "desc": "Grilled chicken skewers marinated in Nepali spices.",
+        "image": "chicken_sekuwa.png"
+    },
+    {
+        "name": "Buff Sukuti Sadheko",
+        "category": "sukuti",
+        "priceReg": "$14.99",
+        "priceSpicy": "$15.99",
+        "desc": "Buffalo Sukuti tossed with onions, chilies, and spices.",
+        "image": "buff_sukuti_sadheko.png"
+    },
+    {
+        "name": "Chicken Biryani",
+        "category": "biryani",
+        "priceReg": "$9.99",
+        "priceSpicy": "$10.99",
+        "desc": "Aromatic basmati rice cooked with tender chicken and rich spices.",
+        "image": "chicken_biryani.png"
+    }
+]

@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function(){
     customElements.define('special-nav', SpecialNav);
     customElements.define('special-contact', SpecialContact);
     customElements.define('special-footer', SpecialFooter);
+    
 
     /* 
     Dynamic Website Changes
@@ -176,13 +177,35 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     };
 
+
+
+    // Link to JSON File for Recommended Items
+    fetch('recommendedItems.json')
+    .then(response => response.json())
+    .then(recommendedMenuData => {
+
+        const shuffledRecItems = recommendedMenuData.sort(() => 0.5 - Math.random());
+
+        const randomRecItems = shuffledRecItems.slice(0 , 3);
+
+        console.log("3 Recommended Items: ", randomRecItems);
+
+
+    })
+    .catch(error => {
+        console.log("Error fetching Recommended Items Data: ", error);
+    })
+
+
+
+
     // Link to JSON File for Menu Data 
     fetch('menuItems.json')
     .then(response => response.json())
     .then(menuData => {
 
-
-
+        
+        
 
         // Default Item Page
 
@@ -396,6 +419,60 @@ document.addEventListener("DOMContentLoaded", function(){
 
     });
 
+
+
+
+
+
+
+
+
+    // Food Slider Images
+
+
+
+    const leftArrow = document.querySelector(".fa-arrow-left");
+    const rightArrow = document.querySelector(".fa-arrow-right");
+    const imageSlider = document.querySelector(".sliderContainer");
+    const images = document.querySelectorAll(".sliderContainerImage");
+    let imageIndex = 0;
+    
+    function sliderUpdate() {
+        if (images.length > 0 && imageSlider) {
+            const imageWidth = images[0].clientWidth;
+            imageSlider.scrollTo({
+                left: imageIndex * imageWidth,
+                behavior: "smooth",
+            });
+        }
+    }
+    
+    if (leftArrow) {
+        leftArrow.addEventListener("click", () => {
+            if (images.length > 0) {
+                if (imageIndex > 0) {
+                    imageIndex--;
+                } else {
+                    imageIndex = images.length - 1;
+                }
+                sliderUpdate();
+            }
+        });
+    }
+    
+    if (rightArrow) {
+        rightArrow.addEventListener("click", () => {
+            if (images.length > 0) {
+                if (imageIndex < images.length - 1) {
+                    imageIndex++;
+                } else {
+                    imageIndex = 0;
+                }
+                sliderUpdate();
+            }
+        });
+    }
+    
 
 
 

@@ -11,6 +11,10 @@ html{
 body{
     overflow-x: hidden !important;
     width: 100vw;
+
+    max-width: 3000px;
+    margin: 0 auto;
+    outline: 2px solid var(--regularWhite);
 }
 
 :root {
@@ -20,11 +24,6 @@ body{
     --mFont: "Montserrat", sans-serif;
     --oFont: "Oswald", sans-serif;
     --pFont: "Poppins", sans-serif;
-}
-
-
-body{
-    background-color: var(--regularWhite);
 }
 
 /* Reusable Elements */
@@ -134,7 +133,9 @@ nav a{
     background-image: url(Assets/Images/mainPageImage.png);
     background-size: cover;
     background-position: bottom;
-    min-height: 90vh;
+
+    height: clamp(500px, 90vh, 900px);
+    
 
 
     display: flex;
@@ -246,8 +247,9 @@ nav a{
     align-items: center;
     justify-content: center;
     gap: 50px;
-    overflow-x: scroll;
     width: 95%;
+
+    flex-wrap: wrap;
 }
 
 .foodCard{
@@ -464,15 +466,15 @@ nav a{
     padding: 50px 20px;
 
     width: 100%;
+
+    
 }
 
 .reviewsTop{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 
-    width: 90%;
 }
 
 
@@ -499,15 +501,17 @@ nav a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 
     gap: 30px;
     width: 90%;
     margin: 0 auto;
 
-    overflow-x: scroll;
 
     position: relative;
+
+
+    flex-wrap: wrap;
 
 }
 
@@ -536,6 +540,7 @@ nav a{
     padding: 15px 15px 40px 15px;
 
     min-width: 300px;
+    max-width: 500px;
     gap: 20px;
 }
 
@@ -563,7 +568,7 @@ nav a{
 
 
 .aboutUsImg{
-    width: 350px;
+    width: clamp(200px, 95%, 350px);
 }
 
 .aboutUs{
@@ -611,10 +616,13 @@ nav a{
 
 .gallery{
     border-top: 6px solid rgba(117, 0, 0, 0.18); 
-    background-color: white;
+    background-color: var(--regularWhite);
     text-align: center;
     width: 100%;
     overflow-x: hidden;
+
+
+    padding: 50px 20px;
 }
 
 .gallery h4{
@@ -622,18 +630,115 @@ nav a{
 }
 
 .galleryContainer{
-    width: 90vw;
-    height: 500px;
-    margin: 0 auto;
     display: flex;
-
-    overflow-x: scroll;
 }
 
-.gallery img{
+.cardsSlider{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    padding: 30px 20px;
+    padding-left: 0px;
+
+    margin: 0 auto;
+}
+
+.sliderContainer{
+    width: clamp(550px, 40vw, 1200px);
+    height: auto;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
+    background-color: lightgray;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    outline: 5px solid var(--regularRed);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    position: relative;
+
+    
+    
+
 }
+
+.sliderContainer::-webkit-scrollbar{
+    display: none;
+}
+.sliderContainer{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sliderContainer img{
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    scroll-snap-align: start;
+}
+
+.sliderButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.sliderButtons i{
+    background-color: var(--regularRed);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+}
+
+.sliderButtons i:hover{
+    background-color: #6d0202
+    
+}
+
+.sliderButtons i:active{
+    background-color: #4d0000
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -736,12 +841,13 @@ nav a{
     letter-spacing: normal;
 
     transition: all 0.2s;
+
+    box-sizing: border-box;
 }
 
 
 .contactForm button:hover{
     letter-spacing: 3px;
-
 }
 
 
@@ -1124,6 +1230,14 @@ footer .bottom{
 
 
 
+    .sliderContainer{
+        width: clamp(250px, 80vw, 520px);
+    }
+
+    .sliderButtons{
+        scale: 0.8;
+    }
+
 
 
 
@@ -1194,6 +1308,27 @@ footer .bottom{
 
 
 
+    .foodCard{
+        padding: 15px 10px 50px 10px;
+        min-width: 250px;
+    }
+
+    .review{
+        min-width: 250px;
+    }
+    .reviews button{
+        padding: 5px 10px;
+    }
+
+
+    .contactUsMore{
+        padding: 20px;
+    }
+
+
+
+
+
 
 
 
@@ -1208,6 +1343,14 @@ footer .bottom{
 
     .social-item {
         text-align: center;
+    }
+
+    .social-item a{
+        overflow-wrap: break-word; 
+        word-wrap: break-word; 
+        word-break: break-all; 
+        white-space: normal; 
+        text-align: left;
     }
     
 }
